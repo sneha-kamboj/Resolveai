@@ -51,7 +51,13 @@ def seed():
         orders.append(order(cust, prod, status, ordered, delivered, amount=prod.price * qty))
     ret = next(p for p in products if p.returnable)
     nonret = next(p for p in products if not p.returnable)
-    orders.append(order(customers[0], ret, "delivered", now - timedelta(days=10), now - timedelta(days=7)))
+    orders.append(
+        order(
+            customers[0],
+            ret,
+            "delivered",
+            now - timedelta(days=10),
+            now - timedelta(days=7)))
     orders.append(order(customers[0], ret, "delivered", now - timedelta(days=11), now - timedelta(days=8)))
     orders.append(order(customers[0], ret, "delivered", now - timedelta(days=5), now - timedelta(days=2), amount=5000))  # refund cap PASS
     orders.append(order(customers[0], ret, "delivered", now - timedelta(days=5), now - timedelta(days=2), amount=5001))  # refund cap FAIL
