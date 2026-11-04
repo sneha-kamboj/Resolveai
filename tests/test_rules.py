@@ -20,5 +20,5 @@ def test_return_not_delivered_fail():
 
 def test_replacement_day15_pass(): assert check_replacement(make_order(15), ret, now)[0] == True
 def test_replacement_day16_fail(): assert check_replacement(make_order(16), ret, now)[0] == False
-def test_refund_5000_pass(): assert check_auto_refund(make_order(1, amount=5000).amount)[0] == True
-def test_refund_5001_fail(): assert check_auto_refund(make_order(1, amount=5001).amount)[0] == False
+def test_refund_5000_pass(): assert check_auto_refund(make_order(1, amount=5000))[0] == True
+def test_refund_5001_fail(): assert check_auto_refund(make_order(1, amount=5001))[0] == False

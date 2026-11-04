@@ -1,5 +1,4 @@
-
-from datetime import date
+from datetime import datetime
 
 RETURN_WINDOW_DAYS = 7
 REPLACEMENT_DAYS = 15
@@ -12,7 +11,7 @@ VALID_REPLACEMENT_REASONS = ("damaged", "defective", "wrong",
 def _days_since(delivered_date, today=None):
     if delivered_date is None:
         return None
-    today = today or date.today()
+    today = today or datetime.now()
     return (today - delivered_date).days
 
 def check_return(order, product, today=None):
@@ -41,12 +40,11 @@ def check_replacement(order, product, now=None):
     return True, "Replacement eligible hai"
 
 
-def check_auto_refund(amount):
-
-    if amount is None:
+def check_auto_refund(order):
+    if order.amount is None:
         return False, "Amount unknown."
+    if order.amount <= AUTO_REFUND_LIMIT:
+        return True, f"Amount Rs.{order.amount} is within the Rs.{AUTO_REFUND_LIMIT} auto-refund limit."
 
-    if amount <= AUTO_REFUND_LIMIT:
-        return True, f"Amount Rs.{amount} is within the Rs.{AUTO_REFUND_LIMIT} auto-refund limit."
+    return False, f"Amount Rs.{order.amount} exceeds the Rs.{AUTO_REFUND_LIMIT} auto-refund limit; human approval required."
 
-    return False, f"Amount Rs.{amount} exceeds the Rs.{AUTO_REFUND_LIMIT} auto-refund limit; human approval required."
