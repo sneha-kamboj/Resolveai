@@ -1,0 +1,251 @@
+text,intent
+When will the return pickup arrive?,return
+I want to send this item back,return
+Where is my order?,order_status
+When will my watch arrive?,order_status
+Please return my money,refund
+"The product is defective, please replace it",replacement
+Please return my money,refund
+My refund has been pending for many days,refund
+How many days does a refund take?,policy_question
+Please return my money,refund
+"The colour of this item has faded, send another one",replacement
+Can I exchange my watch?,replacement
+"I received the wrong size, I want an exchange",replacement
+"My backpack is not working, I need a replacement",replacement
+What is the status of my refund?,refund
+What is the warranty period for shoes?,policy_question
+"My watch is broken, please send another one",replacement
+What is the delivery date for order #276?,order_status
+"I didn't like the backpack, I want to return it",return
+Tell me about your replacement policy,policy_question
+Can I return an item without a bill?,policy_question
+I received a damaged item in order #467,replacement
+"I received the wrong item, please send the correct one",replacement
+How can I return order #352?,return
+Can sale items be returned?,policy_question
+"My watch is defective, please replace it",replacement
+What is your return policy?,policy_question
+"I received the wrong item, please send the correct one",replacement
+My t-shirt order has not arrived yet,order_status
+Can I return an item after 10 days?,policy_question
+How many days does a refund take?,policy_question
+When will I receive my t-shirt order?,order_status
+"I don't want this product, please take it back",return
+I received a damaged item in order #275,replacement
+Tell me about your replacement policy,policy_question
+"The colour of this item has faded, send another one",replacement
+How does a refund work for EMI orders?,policy_question
+What is your return policy?,policy_question
+When will my earbuds arrive?,order_status
+What is the delivery date for order #149?,order_status
+What is the delivery date for order #235?,order_status
+My watch order has not arrived yet,order_status
+My refund has been pending for many days,refund
+"My bottle is not working, I need a replacement",replacement
+What is your return policy?,policy_question
+"I received the wrong size, I want an exchange",replacement
+How many days will the refund take?,refund
+How much time will shipping take?,order_status
+Tell me the status of order #116,order_status
+Can sale items be returned?,policy_question
+I want to place a return request for order #143,return
+Can I exchange my backpack?,replacement
+Has the refund been initiated for order #316?,refund
+Track my order please,order_status
+What does your return policy say?,policy_question
+"I received the wrong item, please send the correct one",replacement
+Where is my parcel stuck?,order_status
+"The colour of my shoes is different, I want to return it",return
+I want to return this shoes because the size is incorrect,return
+When will I receive my refund?,refund
+How many days does a refund take?,policy_question
+Can I return an item after 10 days?,policy_question
+When will I receive my backpack order?,order_status
+I want to return my watch,return
+Can I return an item after 10 days?,policy_question
+Tell me about your replacement policy,policy_question
+Where is my order?,order_status
+I want to send this item back,return
+I want to return this watch because the size is incorrect,return
+Has the refund been initiated for order #235?,refund
+What does your return policy say?,policy_question
+I returned the item but haven't received my refund,refund
+Track my order please,order_status
+Can sale items be returned?,policy_question
+"I didn't like the watch, I want to return it",return
+"I don't want this product, please take it back",return
+What is your return policy?,policy_question
+Where is my parcel stuck?,order_status
+When will the money be credited to my account?,refund
+Can I exchange my bottle?,replacement
+How can I return order #212?,return
+Can sale items be returned?,policy_question
+Can I exchange my earbuds?,replacement
+Where is my order?,order_status
+I want to send this item back,return
+When will I receive my refund?,refund
+"I don't want this product, please take it back",return
+Track my order please,order_status
+Tell me the status of order #147,order_status
+I want to place a return request for order #348,return
+I want to return this t-shirt because the size is incorrect,return
+When will I get my money back for order #132?,refund
+Please return my money,refund
+I want to return my bottle,return
+What is your return policy?,policy_question
+Tell me the status of order #211,order_status
+What does your return policy say?,policy_question
+I want to place a return request for order #390,return
+"My backpack is defective, please replace it",replacement
+"I don't want this product, please take it back",return
+"My earbuds is defective, please replace it",replacement
+What is the warranty period for bottle?,policy_question
+My backpack order has not arrived yet,order_status
+Can I return an item without a bill?,policy_question
+When will my backpack arrive?,order_status
+"I didn't like the earbuds, I want to return it",return
+When will the money be credited to my account?,refund
+How much time will shipping take?,order_status
+How does a refund work for EMI orders?,policy_question
+How many days will the refund take?,refund
+Where is my parcel stuck?,order_status
+I want to place a return request for order #140,return
+Tell me the status of order #219,order_status
+I received a damaged item in order #451,replacement
+How many days will the refund take?,refund
+Has order #495 been delivered or not?,order_status
+Tell me about your replacement policy,policy_question
+"My bottle is defective, please replace it",replacement
+"I didn't like the bottle, I want to return it",return
+"The colour of my watch is different, I want to return it",return
+"My shoes is defective, please replace it",replacement
+Where is my parcel stuck?,order_status
+I want a refund for my t-shirt,refund
+How many days does a refund take?,policy_question
+My refund has been pending for many days,refund
+"The colour of my backpack is different, I want to return it",return
+Has order #219 been delivered or not?,order_status
+I returned the item but haven't received my refund,refund
+"My shoes is broken, please send another one",replacement
+How much time will shipping take?,order_status
+What is the status of my refund?,refund
+When will I get my money back for order #383?,refund
+Which items are non-returnable?,policy_question
+"My earbuds is not working, I need a replacement",replacement
+"I received the wrong earbuds, I want to return it",return
+My refund has been pending for many days,refund
+When will the money be credited to my account?,refund
+Has order #151 been delivered or not?,order_status
+I received a damaged item in order #424,replacement
+Which items are non-returnable?,policy_question
+How can I return order #360?,return
+When will my shoes arrive?,order_status
+I returned the item but haven't received my refund,refund
+I want a refund for my watch,refund
+When will I receive my bottle order?,order_status
+I want to return this bottle because the size is incorrect,return
+When will I get my money back for order #401?,refund
+Track my order please,order_status
+Where is my order?,order_status
+"My earbuds is broken, please send another one",replacement
+"My backpack is broken, please send another one",replacement
+When will I receive my refund?,refund
+How many days will the refund take?,refund
+What is the warranty period for backpack?,policy_question
+How does a refund work for EMI orders?,policy_question
+What is the warranty period for earbuds?,policy_question
+When will I get my money back for order #273?,refund
+I returned the item but haven't received my refund,refund
+My shoes order has not arrived yet,order_status
+"The item is damaged, I need a replacement",replacement
+"The colour of this item has faded, send another one",replacement
+How can I return order #170?,return
+Can sale items be returned?,policy_question
+Tell me the status of order #115,order_status
+Where is my parcel stuck?,order_status
+Can I return an item without a bill?,policy_question
+I want to return this backpack because the size is incorrect,return
+Which items are non-returnable?,policy_question
+How can I return order #285?,return
+What is the delivery date for order #409?,order_status
+"I don't want this product, please take it back",return
+"The item is damaged, I need a replacement",replacement
+"My bottle is broken, please send another one",replacement
+Tell me about your replacement policy,policy_question
+I want a refund for my bottle,refund
+I want to send this item back,return
+What is the delivery date for order #283?,order_status
+"I received the wrong size, I want an exchange",replacement
+How much time will shipping take?,order_status
+Please return my money,refund
+What is the warranty period for t-shirt?,policy_question
+I want to return my backpack,return
+"The product is defective, please replace it",replacement
+Which items are non-returnable?,policy_question
+What is the status of my refund?,refund
+I returned the item but haven't received my refund,refund
+"I received the wrong t-shirt, I want to return it",return
+"I received the wrong size, I want an exchange",replacement
+"The item is damaged, I need a replacement",replacement
+Has the refund been initiated for order #246?,refund
+Can I return an item without a bill?,policy_question
+I want to return my shoes,return
+I want to send this item back,return
+I received a damaged item in order #204,replacement
+How does a refund work for EMI orders?,policy_question
+When will the money be credited to my account?,refund
+Can I return an item after 10 days?,policy_question
+When will the return pickup arrive?,return
+Has the refund been initiated for order #299?,refund
+"The item is damaged, I need a replacement",replacement
+How much time will shipping take?,order_status
+Can I exchange my shoes?,replacement
+"The product is defective, please replace it",replacement
+"The colour of my t-shirt is different, I want to return it",return
+Can I return an item after 10 days?,policy_question
+When will I get my money back for order #110?,refund
+When will I receive my watch order?,order_status
+Has order #140 been delivered or not?,order_status
+When will the money be credited to my account?,refund
+When will the return pickup arrive?,return
+"The colour of this item has faded, send another one",replacement
+When will I receive my refund?,refund
+"I received the wrong backpack, I want to return it",return
+When will I receive my refund?,refund
+Can I return an item without a bill?,policy_question
+When will the return pickup arrive?,return
+How many days will the refund take?,refund
+When will the return pickup arrive?,return
+What does your return policy say?,policy_question
+Has order #248 been delivered or not?,order_status
+Which items are non-returnable?,policy_question
+"I received the wrong size, I want an exchange",replacement
+"I received the wrong shoes, I want to return it",return
+"The item is damaged, I need a replacement",replacement
+"I received the wrong bottle, I want to return it",return
+"The product is defective, please replace it",replacement
+My earbuds order has not arrived yet,order_status
+What is the status of my refund?,refund
+I want to place a return request for order #474,return
+I want to return my earbuds,return
+"The product is defective, please replace it",replacement
+"I received the wrong item, please send the correct one",replacement
+"I received the wrong item, please send the correct one",replacement
+"My watch is not working, I need a replacement",replacement
+"The colour of this item has faded, send another one",replacement
+My refund has been pending for many days,refund
+How many days does a refund take?,policy_question
+How does a refund work for EMI orders?,policy_question
+I want a refund for my earbuds,refund
+Where is my order?,order_status
+What is the status of my refund?,refund
+"My shoes is not working, I need a replacement",replacement
+When will my bottle arrive?,order_status
+"I didn't like the shoes, I want to return it",return
+When will I receive my earbuds order?,order_status
+Has the refund been initiated for order #332?,refund
+What does your return policy say?,policy_question
+"The colour of my bottle is different, I want to return it",return
+Track my order please,order_status
+I want a refund for my shoes,refund
