@@ -1,0 +1,212 @@
+{
+  "total": 20,
+  "top1": 13,
+  "hit3": 17,
+  "detail": [
+    {
+      "q": "What is the return policy?",
+      "expected": "return_policy",
+      "got": [
+        "return_policy",
+        "order_cancellation",
+        "wrong_item"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "How many days do I have to return an item?",
+      "expected": "return_policy",
+      "got": [
+        "wrong_item",
+        "return_policy",
+        "damaged_item"
+      ],
+      "top1": false,
+      "hit3": true
+    },
+    {
+      "q": "When will I receive my refund?",
+      "expected": "refund_timeline",
+      "got": [
+        "replacement_policy",
+        "wrong_item",
+        "emi_refund"
+      ],
+      "top1": false,
+      "hit3": false
+    },
+    {
+      "q": "How long does it take for the money to be refunded?",
+      "expected": "refund_timeline",
+      "got": [
+        "refund_timeline",
+        "order_cancellation",
+        "refund_method"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "Which account will receive my refund if I paid through UPI?",
+      "expected": "refund_method",
+      "got": [
+        "refund_method",
+        "emi_refund",
+        "replacement_policy"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "How will I receive a refund for a COD order?",
+      "expected": "refund_method",
+      "got": [
+        "emi_refund",
+        "size_exchange",
+        "replacement_policy"
+      ],
+      "top1": false,
+      "hit3": false
+    },
+    {
+      "q": "Can I get a replacement for a damaged item?",
+      "expected": "replacement_policy",
+      "got": [
+        "damaged_item",
+        "replacement_policy",
+        "size_exchange"
+      ],
+      "top1": false,
+      "hit3": true
+    },
+    {
+      "q": "I received a broken item and have sent a photo.",
+      "expected": "damaged_item",
+      "got": [
+        "damaged_item",
+        "wrong_item"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "I received a different product that I did not order.",
+      "expected": "wrong_item",
+      "got": [
+        "refund_timeline",
+        "replacement_policy",
+        "order_cancellation"
+      ],
+      "top1": false,
+      "hit3": false
+    },
+    {
+      "q": "When will my parcel arrive and where can I find the tracking link?",
+      "expected": "shipping_delivery",
+      "got": [
+        "shipping_delivery"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "I want to cancel my order. It has not been dispatched yet.",
+      "expected": "order_cancellation",
+      "got": [
+        "order_cancellation",
+        "shipping_delivery"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "I want to cancel my order before it gets shipped.",
+      "expected": "order_cancellation",
+      "got": [
+        "shipping_delivery",
+        "order_cancellation"
+      ],
+      "top1": false,
+      "hit3": true
+    },
+    {
+      "q": "Can I return an opened perfume?",
+      "expected": "non_returnable_items",
+      "got": [
+        "return_policy",
+        "non_returnable_items",
+        "size_exchange"
+      ],
+      "top1": false,
+      "hit3": true
+    },
+    {
+      "q": "How many months is the warranty for earbuds?",
+      "expected": "warranty",
+      "got": [
+        "warranty",
+        "size_exchange"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "My smartwatch suddenly stopped working. Is it covered under warranty?",
+      "expected": "warranty",
+      "got": [
+        "warranty"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "I purchased through EMI. When will the bank adjust my refund?",
+      "expected": "emi_refund",
+      "got": [
+        "emi_refund",
+        "refund_method"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "When will I receive a refund for an EMI purchase?",
+      "expected": "emi_refund",
+      "got": [
+        "emi_refund",
+        "wrong_item",
+        "size_exchange"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "My shoes are too small. I want a different size.",
+      "expected": "size_exchange",
+      "got": [
+        "size_exchange"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "Can I exchange the size of my T-shirt?",
+      "expected": "size_exchange",
+      "got": [
+        "size_exchange"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "How are refunds above Rs. 5,000 approved?",
+      "expected": "refund_method",
+      "got": [
+        "refund_method"
+      ],
+      "top1": true,
+      "hit3": true
+    }
+  ]
+}
