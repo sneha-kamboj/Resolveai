@@ -16,10 +16,10 @@ def get_order_status(db, order_id, customer_id):
 def create_return(db, order_id, customer_id):
     order = get_order(db, order_id, customer_id)
     if order is None:
-        return {"ok": False, "reason": "Order nahi mila"}
+        return {"ok": False, "reason": "Order not found"}
     existing = db.query(Return).filter(Return.order_id == order_id, Return.status == "initiated").first()
     if existing:
-        return {"ok": True, "return_id": existing.id, "reason": "Return pehle se initiated hai"}
+        return {"ok": True, "return_id": existing.id, "reason": "Return is already initiated"}
     ok, reason = engine.check_return(order, db.get(Product, order.product_id))
     if not ok:
         return {"ok": False, "reason": reason}
@@ -30,10 +30,10 @@ def create_return(db, order_id, customer_id):
 def initiate_refund(db, order_id, customer_id):
     order = get_order(db, order_id, customer_id)
     if order is None:
-        return {"ok": False, "reason": "Order nahi mila"}
+        return {"ok": False, "reason": "Order not found"}
     existing = db.query(Refund).filter(Refund.order_id == order_id).first()
     if existing:
-        return {"ok": True, "refund_id": existing.id, "reason": "Refund pehle se processed hai"}
+        return {"ok": True, "refund_id": existing.id, "reason": "Refund is already initiated"}
     ok, reason = engine.check_auto_refund(order)
     if not ok:
         return {"ok": False, "reason": reason, "escalate": True}
@@ -45,7 +45,7 @@ def create_replacement(db, order_id, customer_id):
 
     order = get_order(db, order_id, customer_id)
     if order is None:
-        return {"ok": False, "reason": "Order nahi mila"}
+        return {"ok": False, "reason": "Order not found"}
     ok, reason = engine.check_replacement(order, db.get(Product, order.product_id))
     if not ok:
         return {"ok": False, "reason": reason}
@@ -56,7 +56,7 @@ def create_replacement(db, order_id, customer_id):
 def escalate_to_human(db, ticket_id):
     ticket = db.get(Ticket, ticket_id)
     if ticket is None:
-        return {"ok": False, "reason": "Ticket nahi mila"}
+        return {"ok": False, "reason": "Ticket does not exist"}
     ticket.status = "escalated"
     db.commit()
-    return {"ok": True, "reason": "Human team ko bhej diya"}
+    return {"ok": True, "reason": "Send to Human team"}
